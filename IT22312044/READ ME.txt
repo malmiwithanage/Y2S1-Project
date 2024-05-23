@@ -1,0 +1,1 @@
+I have put the 'images' file outside of the project file because the upload size limit was exceeded.

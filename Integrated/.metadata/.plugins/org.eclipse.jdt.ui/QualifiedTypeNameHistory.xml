@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.mysql.jdbc.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.doctor.Person"/>
+    <fullyQualifiedTypeName name="com.doctor.DoctorDBUtil"/>
+    <fullyQualifiedTypeName name="com.doctor.PatientDBUtil"/>
+    <fullyQualifiedTypeName name="com.doctor.Doctor"/>
+    <fullyQualifiedTypeName name="com.doctor.Patient"/>
+    <fullyQualifiedTypeName name="com.model.Person"/>
+    <fullyQualifiedTypeName name="com.util.AppointmentDButil"/>
+    <fullyQualifiedTypeName name="com.model.Appointment"/>
+    <fullyQualifiedTypeName name="com.model.Receptionist1Duo"/>
+    <fullyQualifiedTypeName name="com.util.Receptionist1Duo"/>
+    <fullyQualifiedTypeName name="com.model.Receptionist1"/>
+    <fullyQualifiedTypeName name="com.util.ReceptionistDButil"/>
+</qualifiedTypeNameHistroy>

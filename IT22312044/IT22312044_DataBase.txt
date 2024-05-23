@@ -1,0 +1,63 @@
+CREATE TABLE doctor (
+  id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(45) DEFAULT NULL,
+  email VARCHAR(45) DEFAULT NULL,
+  phone VARCHAR(45) DEFAULT NULL,
+  username VARCHAR(45) DEFAULT NULL,
+  password VARCHAR(45) DEFAULT NULL,
+  department VARCHAR(255) DEFAULT NULL,
+  gender VARCHAR(20) DEFAULT NULL,
+  speciality VARCHAR(255) DEFAULT NULL,
+  licencenumber VARCHAR(255) DEFAULT NULL,
+  address VARCHAR(255) DEFAULT NULL,
+  shift VARCHAR(255) DEFAULT NULL,
+  appointmentfee VARCHAR(255) DEFAULT NULL,
+  consultationroom VARCHAR(255) DEFAULT NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+INSERT INTO hospital.doctor VALUES (0,'Dr. Maria Garcia', 'maria.garcia@gmail.com', '(555) 345-6789', 'mgarcia', 'mar1@D0c', 'Obstetrics', 'Female', 'Obstetrician', 'DOC234567', '890 Cedar St, City, State', 'Evening', '$160', 'Room 608');
+INSERT INTO hospital.doctor VALUES (0,'Dr. William Hernandez', 'william.hernandez@gmail.com', '(555) 456-7890', 'whernandez', 'b1llDr', 'Neurology', 'Male', 'Neurologist', 'DOC890123', '987 Walnut St, City, State', 'Morning', '$170', 'Room 702');
+INSERT INTO hospital.doctor VALUES (0,'Dr. Laura Martinez', 'laura.martinez@gmail.com', '(555) 123-9876', 'lmartinez', 'l@uraM!	', 'Ophthalmology', 'Female', 'Ophthalmologist', 'DOC456789', '765 Birch St, City, State', 'Evening', '$190', 'Room 801');
+INSERT INTO hospital.doctor VALUES (0, 'Dr. Laura Martinez', 'laura.martinez@gmail.com', '(555) 123-9876', 'lmartinez', 'l@uraM!', 'Ophthalmology', 'Female', 'Ophthalmologist', 'DOC456789', '765 Birch St, City, State', 'Evening', '$190', 'Room 801');
+INSERT INTO hospital.doctor VALUES (0, 'Dr. John Smith', 'john.smith@gmail.com', '(555) 234-5678', 'jsmith', 'J0hn$mith', 'Cardiology', 'Male', 'Cardiologist', 'DOC123456', '123 Oak St, City, State', 'Morning', '$175', 'Room 802');
+INSERT INTO hospital.doctor VALUES (0, 'Dr. Maria Rodriguez', 'maria.rodriguez@gmail.com', '(555) 987-6543', 'mrodriguez', 'M@ria!R', 'Dermatology', 'Female', 'Dermatologist', 'DOC789012', '456 Elm St, City, State', 'Afternoon', '$185', 'Room 803');
+INSERT INTO hospital.doctor VALUES (0, 'Dr. Michael Johnson', 'michael.johnson@gmail.com', '(555) 345-6789', 'mjohnson', 'M!ch@3l', 'Orthopedics', 'Male', 'Orthopedic Surgeon', 'DOC234567', '789 Pine St, City, State', 'Morning', '$200', 'Room 804');
+INSERT INTO hospital.doctor VALUES (0, 'Dr. Emily Davis', 'emily.davis@gmail.com', '(555) 456-7890', 'edavis', '3m!1yD', 'Pediatrics', 'Female', 'Pediatrician', 'DOC567890', '234 Maple St, City, State', 'Evening', '$160', 'Room 805');
+INSERT INTO hospital.doctor VALUES (0, 'Dr. Robert Wilson', 'robert.wilson@gmail.com', '(555) 678-9012', 'rwilson', 'R0bert@', 'Neurology', 'Male', 'Neurologist', 'DOC678901', '456 Cedar St, City, State', 'Afternoon', '$195', 'Room 806');
+INSERT INTO hospital.doctor VALUES (0, 'Dr. Sophia Brown', 'sophia.brown@gmail.com', '(555) 890-1234', 'sbrown', 'S0ph!@', 'Gynecology', 'Female', 'Gynecologist', 'DOC890123', '567 Pine St, City, State', 'Morning', '$170', 'Room 807');
+INSERT INTO hospital.doctor VALUES (0, 'Dr. William Clark', 'william.clark@gmail.com', '(555) 456-7890', 'wclark', 'W1ll!@m', 'Surgery', 'Male', 'General Surgeon', 'DOC123789', '345 Cedar St, City, State', 'Evening', '$210', 'Room 808');
+INSERT INTO hospital.doctor VALUES (0, 'Dr. Olivia Lewis', 'olivia.lewis@gmail.com', '(555) 234-5678', 'olewis', 'Ol!v!@L', 'Oncology', 'Female', 'Oncologist', 'DOC456890', '123 Oak St, City, State', 'Morning', '$220', 'Room 809');
+INSERT INTO hospital.doctor VALUES (0, 'Dr. James Anderson', 'james.anderson@gmail.com', '(555) 987-6543', 'janderson', 'J@m3s#', 'Urology', 'Male', 'Urologist', 'DOC890234', '567 Birch St, City, State', 'Afternoon', '$180', 'Room 810');
+
+CREATE TABLE `patient` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) DEFAULT NULL,
+  `email` varchar(45) DEFAULT NULL,
+  `phone` varchar(100) DEFAULT NULL,
+  `username` varchar(45) DEFAULT NULL,
+  `password` varchar(45) DEFAULT NULL,
+  `gender` varchar(255) DEFAULT NULL,
+  `address` varchar(255) DEFAULT NULL,
+  `dateofbirth` varchar(255) DEFAULT NULL,
+  `emergencycontact` varchar(255) DEFAULT NULL,
+  `medicalhistory` varchar(700) DEFAULT NULL,
+  `diagnosis` varchar(700) DEFAULT NULL,
+  `allergies` varchar(700) DEFAULT NULL,
+  `prescriptions` varchar(700) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+INSERT INTO hospital.patient VALUES (0, 'Alice Johnson', 'alice.j@gmail.com', '(555) 123-4567', 'alicej', 'p@ssw0rd1', 'Female', '123 Main St, City, State', '1990-05-15', '(555) 987-6543', 'Aspirin, 81mg	', 'None', 'N/A', 'Losartan, 50mg');
+INSERT INTO hospital.patient VALUES (0, 'Bob Smith', 'bob.smith@gmail.com', '(555) 987-6543', 'bobsmith', 'b0bsm1th', 'Male', '456 Elm St, City, State', '1985-10-22', '(555) 123-4567', 'Metformin, 500mg', 'Diabetes', 'Penicillin', 'None' );
+INSERT INTO hospital.patient VALUES (0, 'Bob Smith', 'bob.smith@gmail.com', '(555) 987-6543', 'bobsmith', 'b0bsm1th', 'Male', '456 Elm St, City, State', '1985-10-22', '(555) 123-4567', 'Metformin, 500mg', 'Diabetes', 'Penicillin', 'None');
+INSERT INTO hospital.patient VALUES (0, 'Alice Johnson', 'alice.johnson@gmail.com', '(555) 234-5678', 'alicejohnson', 'A1ic3J', 'Female', '123 Oak St, City, State', '1990-05-15', '(555) 789-0123', 'Ibuprofen', 'None', 'Amoxicillin', 'None');
+INSERT INTO hospital.patient VALUES (0, 'Charlie Brown', 'charlie.brown@gmail.com', '(555) 345-6789', 'charliebrown', 'Ch@rl13', 'Male', '789 Pine St, City, State', '1982-03-03', '(555) 890-1234', 'Lisinopril, 10mg', 'High Blood Pressure', 'Erythromycin', 'None');
+INSERT INTO hospital.patient VALUES (0, 'David Wilson', 'david.wilson@gmail.com', '(555) 123-4567', 'davidwilson', 'D@vidW', 'Male', '456 Cedar St, City, State', '1978-12-10', '(555) 234-5678', 'Simvastatin, 20mg', 'Cholesterol', 'Azithromycin', 'None');
+INSERT INTO hospital.patient VALUES (0, 'Eva Miller', 'eva.miller@gmail.com', '(555) 789-0123', 'evamiller', '3v@M1ll', 'Female', '234 Oak St, City, State', '1992-09-30', '(555) 987-6543', 'Levothyroxine, 50mcg', 'Thyroid', 'Cephalexin', 'None');
+INSERT INTO hospital.patient VALUES (0, 'Frank Jackson', 'frank.jackson@gmail.com', '(555) 234-5678', 'frankjackson', 'Fr@nkJ', 'Male', '567 Pine St, City, State', '1975-07-25', '(555) 345-6789', 'Amlodipine, 5mg', 'High Blood Pressure', 'Ciprofloxacin', 'None');
+INSERT INTO hospital.patient VALUES (0, 'Grace Davis', 'grace.davis@gmail.com', '(555) 123-4567', 'gracedavis', 'Gr@c3D', 'Female', '890 Elm St, City, State', '1988-04-14', '(555) 678-9012', 'Hydrochlorothiazide, 25mg', 'High Blood Pressure', 'Doxycycline', 'None');
+INSERT INTO hospital.patient VALUES (0, 'Henry Moore', 'henry.moore@gmail.com', '(555) 234-5678', 'henrymoore', 'H3nryM', 'Male', '123 Birch St, City, State', '1980-01-05', '(555) 456-7890', 'Metoprolol, 50mg', 'High Blood Pressure', 'Clindamycin', 'None');
+INSERT INTO hospital.patient VALUES (0, 'Ivy Clark', 'ivy.clark@gmail.com', '(555) 678-9012', 'ivyclark', '1vyC', 'Female', '456 Cedar St, City, State', '1995-11-20', '(555) 890-1234', 'Omeprazole, 20mg', 'Acid Reflux', 'Levofloxacin', 'None');
+
+

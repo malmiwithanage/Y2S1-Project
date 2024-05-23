@@ -1,0 +1,116 @@
+@charset "ISO-8859-1";
+button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    margin: 2%;
+    width: 35%;
+    height:132px;
+    border-radius: 10px;
+    border-color: darkred;
+        
+}
+button:hover{
+    color:darkblue;
+    background-color: cadetblue;
+}
+#landing{
+    width: 70%;
+    margin-top: 5%;
+}
+#head{
+    
+}
+#logo{
+    width: 12%;
+}
+
+#regborder{
+    background-color:rgba(255, 255, 255, 0.5);
+    width: 600px;padding: 5px 16px 55px 18px; 
+    border-radius: 10px;
+    border: 2px solid rgb(112, 24, 24);
+    margin-top: 6%;
+}
+#headlogging{
+    
+}
+#registertext{
+    font-size:larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}#regdetails{
+    position: absolute; 
+    left: 38%; 
+    font-size: 16px; 
+    font-family: 'Work Sans', sans-serif;  
+}
+.topnav{
+    background-color:rgba(46, 46, 46, 0.493);
+    overflow: hidden;
+    font-family: 'Work Sans', sans-serif;
+    filter: alpha(opacity=50);
+  }
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 13px 25px;
+    text-decoration: none;
+    font-size: 16px;
+}
+  
+ 
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+ 
+.topnav a.active {
+    
+    color: white;
+}
+.box{
+    font-family: 'Work Sans', sans-serif;
+    color: #131320;
+    text-align: center;
+    padding: 13px 25px;
+    margin-top: 100px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.but{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    margin: 2%;
+    width:auto;
+    height: 30px;
+    border-color: rgb(15, 150, 190);
+}
+.but:hover {
+    background-color: #3988d3;
+    color: black;
+}
+.boxx{
+    font-family: 'Work Sans', sans-serif;
+    color: #131320;
+    text-align: center;
+    padding: 8px 8px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+#head{
+    font-family: 'Work Sans', sans-serif;
+    color: #131320;
+    padding: 8px 8px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 26px;
+}
+#loginadmin{
+    font-family: 'Work Sans', sans-serif;
+}
+#admininsert{
+    text-decoration: none;
+    color:  #3988d3;
+}
